@@ -15,7 +15,29 @@
         <li><a href="third.html">JavaScript</a></li>
     </ol>
     <h2>Hello this is the first Page</h2>
-    
+    <p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/R9At2ICm4LQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <p></p>
+    <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://firstwebsite-4.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     <h3>Tag!</h3>
     <ul>
         <li>strong tag : <strong>bold</strong></li>
@@ -25,6 +47,7 @@
         <li>p tag : new line (closing tag가 필요하며, 단락 설정을 할 때 유용)</li>
         <li>img tag : image (src에 링크나 파일명 넣어주면 되고, width로 크기 설정)</li>
         <li>a tag : href : 하이퍼링크</li>
+        <li>iframe tag : 동영상을 직접 넣을 수 있음(퍼가기 기능 사용)</li>
     </ul>
 </body>
 </html>
