@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>second javascript</title>
+
+    <script src="color.js"></script>
+
+</head>
+<body>
+    <input type="button" value="dark mode" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    ">
+    <input type="button" value="normal mode" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    ">
+    <a href="index.html"><input type="button" value="HOME" style="background-color: darkgreen; color: white;"></a>
+    <p></p>
+    <!-- querySelector('태그 이름')은 해당 태그의 내용을 모두 선택해준다-->
+    <h2>script와 일반 body의 차이점</h2>
+    <script>
+        document.write(1+1);
+    </script>
+    <p>
+        1+1 <!--script에서 1+1 출력할 시 계산해서 나오지만 html 내에서는 1+1 그대로 출력-->
+    </p>
+    <hr> <!--구분선-->
+    <h2>input 태그와 alert()</h2>
+    <input type="button" value="this is the button" onclick="alert('press')">
+    <p>이벤트 코드 : <strong>="alert('쓸 내용')"</strong>을 통해 버튼을 눌렀을 때 경고창을 띄울 수 있다</p>
+    <input type="text" onchange="alert('changed')"> 바뀌었을 때 <br>
+    <input type="text" onkeydown="alert('key down!')"> 아래 방향 키 눌렀을 때 <br><br>
+
+    <hr>
+    <h2>console</h2>
+    <p>- 검사 창에서 console을 누르고 '문자'.length를 치면 해당 문자의 길이가 나온다</p>
+    <hr>
+
+    <h2>if를 사용한 toggle button</h2>
+    <p><strong>document.querySelector('#아이디').value</strong>를 통해서 해당 버튼의 
+    value 값을 가져오고 <strong>===</strong>을 통해 boolean 계산이 가능</p>
+    <p>this를 사용하면 더 간결하게 재사용 가능</p>
+    <input id="toggle" type="button" value="night" onclick="toggleHandler(this)" style="background-color:lightpink">
+    <input id="toggle" type="button" value="night" onclick="toggleHandler(this)" style="background-color:lightyellow">
+    <p></p>
+    <hr>
+
+    <h2>Array & Get</h2>
+    <script>
+        var people = ["sunny", "yund"];
+        document.write(people[0]+" "+people[1]+"<br>");
+        document.write("배열 크기 : "+people.length);
+        people.push('minmin');
+        document.write("<br>minmin을 array에 넣는 중")
+    </script>
+    <p></p><hr>
+
+    <h2>Loop</h2>
+    <ul>
+    <script>
+        var i = 0;
+        while(i<people.length){
+            document.write('<li>'+people[i]+'</li>');
+            i++;
+        }
+    </script>
+    </ul> <hr>
+
+    <h2>Object</h2>
+    객체를 만들 때는 { }를 사용, 해당 이름의 닉네임을 만들어줘야 한다. <br>
+    <script>
+        var coworkers = {
+            "programmer": "one", "designer":"two" };
+        document.write("programmer : "+coworkers.programmer+'<br>');
+        coworkers.booker = "three";
+        document.write("booker : "+coworkers.booker);
+    </script>
+</body>
+</html>

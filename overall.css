@@ -2,7 +2,7 @@
 h1 {
     text-align: center;
     font-size: 70px;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px dashed grey;
     margin: 0px 0px;
     padding:30px 30px ;
 }
@@ -15,7 +15,7 @@ a { /* a 태그에 대한 모든 폰트 색을 pink 색으로 */
     font-weight: bold;
 }
 #content {
-    border-left: 1px solid grey;
+    border-left: 1px dashed grey;
     padding-left: 20px;
     margin-top: 0px;
 }
