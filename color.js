@@ -9,7 +9,7 @@ var Body = {
     }
 }; /*객체 생성 ,로 함수 구분*/
 
-function toggleHandler(self) {
+function toggleHandler(self) {                                
     var target = document.querySelector('body');
 
     if (self.value === 'night'){
